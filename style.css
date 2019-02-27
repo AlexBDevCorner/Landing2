@@ -17,13 +17,15 @@ body {
 }
 
 .main-nav {
-    background: white;
+    background: #2c3e50;
+    border-bottom: solid 3px #2ecc71;
 }
 
 .main-nav--items {
     display: flex;
     list-style-type: none;
-    color: black;
+    color: #2ecc71;
+    font-weight: 700;
     font-size: 1.5rem;
     line-height: 10vh;
     justify-content: center;
@@ -38,7 +40,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 88vh;
 }
 
 .register-button {
@@ -70,5 +72,20 @@ body {
 .slogan-container p {
     color: white;
     margin-bottom: 5px;
+}
+
+.learn-more {
+    color:white;
+    position: absolute;
+    bottom: 10%;
+    margin-left: 47%;
+    font-size: 2rem;
+}
+
+#show-more-image {
+    bottom: 5%;
+    position: absolute;
+    margin-left: 50%;
+    transform: rotate(90deg);
 }
 
