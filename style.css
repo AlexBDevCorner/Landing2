@@ -98,21 +98,48 @@ body {
     border-top: solid 3px #2ecc71;
 }
 
+#overview-section h2 {
+    color: #2ecc71;
+    font-size: 3rem;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    text-align: center;
+}
+
 .features-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 80px;
     padding: 0 100px 0 100px;
+}
+
+.features-container h3 {
+    color: #2ecc71;
+    width: 300px;
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .features-container p {
     color: #2ecc71;
-    width: 250px;
+    width: 300px;
     font-size: 1.3rem;
     margin-top: 30px;
+    text-align: justify;
+    line-height: 145%;
+}
+
+.features-container a {
+    color: #2ecc71;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-left: 30%;
 }
 
 .feature-icon {
+    padding-top: 80px;
+    padding-left: 17%;
     width: 200px;
     height: 200px;
 }
