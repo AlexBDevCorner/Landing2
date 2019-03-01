@@ -115,6 +115,7 @@ body {
     display: flex;
     height: 58vh;
     justify-content: space-around;
+    align-items: center;
     padding: 0 100px 0 100px;
 }
 
