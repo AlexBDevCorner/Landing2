@@ -113,7 +113,7 @@ body {
 
 .features-container {
     display: flex;
-    height: 64vh;
+    height: 48vh;
     justify-content: space-around;
     padding: 0 100px 0 100px;
 }
@@ -125,15 +125,15 @@ body {
 
 #features-section h3 {
     color: #2ecc71;
-    width: 210px;
-    font-size: 1.4rem;
+    width: 250px;
+    font-size: 1.8rem;
     text-align: center;
 }
 
 .features-container p {
     color: #2ecc71;
-    width: 210px;
-    font-size: 1.1rem;
+    width: 250px;
+    font-size: 1.3rem;
     margin-top: 20px;
     text-align: justify;
     line-height: 145%;
@@ -141,9 +141,9 @@ body {
 
 .feature-icon {
     padding-top: 50px;
-    padding-left: 21%;
-    width: 120px;
-    height: 120px;
+    padding-left: 22%;
+    width: 140px;
+    height: 140px;
 }
 
 #overview-navigation {
@@ -180,9 +180,10 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 12vh;
+    height: 20vh;
 }
 
 .how-it-works-image {
-    height: 1.4rem;
+    height: 3rem;
+    margin: 0 10px;
 }
