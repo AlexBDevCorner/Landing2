@@ -18,7 +18,9 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./action-ball-field-274506.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh;   
+    height: 100vh;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .main-nav {
@@ -61,10 +63,14 @@ body {
     text-align: center;
     border-radius: 10px;
     font-size: 1.5rem;
+    opacity: 0;
+    animation: fade-in-down ease 0.5s forwards;
 }
 
 .slogan-container {
     padding-left: 15px;
+    opacity: 0;
+    animation: fade-in-right ease 1s forwards;
 }
 
 .slogan-container h1 {
@@ -108,12 +114,40 @@ body {
     box-sizing: border-box;
 }
 
+@keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-down {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.fade-in-right--on-viewport {
+    animation: fade-in-right ease 1s forwards;
+}
+
+
 #features-section h2 {
     color: var(--main-txt-color);
     font-size: 3rem;
     word-spacing: 3px;
     letter-spacing: 2px;
     text-align: center;
+    opacity: 0;
 }
 
 .features-container {
@@ -220,8 +254,8 @@ body {
 .overview div {
     color: var(--main-txt-color);   
     font-size: 5rem;
-    height: 6rem;
-    width: 6rem;
+    height: 100px;
+    width: 10%;
     text-align: center;
 }
 
@@ -236,5 +270,6 @@ body {
     font-size: 1.8rem;
     line-height: 145%;
     letter-spacing: 2px;
-    padding: 1.5rem
+    padding: 1.5rem;
+    width: 90%;
 }
