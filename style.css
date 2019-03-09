@@ -40,6 +40,7 @@ body {
 
 .main-nav--items li {
     padding: 0 20px 0 20px;
+    animation: fade-in-right ease 1s forwards;
 }
 
 .main-container {
@@ -102,6 +103,9 @@ body {
     bottom: 5%;
     position: absolute;
     height: 10%;
+    animation: fade-in-down-long ease 1s forwards;
+    opacity: 0;
+    cursor: pointer;
 }
 
 #features-section {
@@ -117,7 +121,7 @@ body {
 @keyframes fade-in-right {
     from {
       opacity: 0;
-      transform: translateX(-15px);
+      transform: translateX(-50px);
     }
     to {
       opacity: 1;
@@ -128,7 +132,18 @@ body {
 @keyframes fade-in-down {
     from {
       opacity: 0;
-      transform: translateY(-15px);
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-down-long {
+    from {
+      opacity: 0;
+      transform: translateY(-200px);
     }
     to {
       opacity: 1;
@@ -158,8 +173,9 @@ body {
     padding: 0 100px 0 100px;
 }
 
-.features-container h3 {
+.features-container div h3 {
     margin-top: 20px;
+    opacity: 0;
 }
 
 
@@ -170,19 +186,21 @@ body {
     text-align: center;
 }
 
-.features-container p {
+.features-container div p {
     color: var(--main-txt-color);
     width: 250px;
     font-size: 1.3rem;
     margin-top: 20px;
     text-align: justify;
     line-height: 145%;
+    opacity: 0;
 }
 
 .feature-icon {
     padding-left: 22%;
     width: 140px;
     height: 140px;
+    opacity: 0;
 }
 
 #overview-navigation {
@@ -206,6 +224,7 @@ body {
 .overview-navigation-item-container:hover,
 .overview-navigation-item-container:hover a {
     background: #2bbe69;
+    cursor: pointer;
 }
 
 .overview-navigation-item-container.active-item:hover a {
@@ -231,9 +250,14 @@ body {
 .how-it-works-image {
     height: 3rem;
     margin: 0 10px;
+    opacity: 0;
 }
 
-#overview-container {
+.overview-container {
+    height: 0vh;
+}
+
+.vh88 {
     height: 88vh;
     background: var(--main-bg-color);
 }
@@ -272,4 +296,8 @@ body {
     letter-spacing: 2px;
     padding: 1.5rem;
     width: 90%;
+}
+
+.overview ul {
+    opacity: 0;
 }
