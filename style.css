@@ -291,10 +291,10 @@ body {
 
 .overview p {
     color: var(--main-txt-color);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 145%;
     letter-spacing: 2px;
-    padding: 1.5rem;
+/*    padding: 1.5rem;*/
     width: 90%;
 }
 
