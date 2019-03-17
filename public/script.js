@@ -10,6 +10,9 @@ const overviewContainer = document.querySelector(".overview-container")
 const showMoreImage = document.querySelector("#show-more-image")
 const overviewNavigation = document.querySelector("#overview-navigation")
 const overviewUls = document.querySelectorAll(".overview ul")
+const featuresContainer = document.querySelector(".features-container")
+const toTopLink = document.querySelector(".to-top-link")
+const mainNav = document.querySelector(".main-nav")
 
 const fadeRight = [
     ...h2s,
@@ -44,6 +47,17 @@ window.addEventListener('scroll', e => {
 		  el.classList.add("fade-in-right--on-viewport")
 	   }
     })
+    console.log(featuresContainer)
+    console.log(mainNav)
+    if (toTopLink.classList.contains("visible")) {
+        if (isInViewport(mainNav)) {
+            toTopLink.classList.remove("visible")
+        }
+    } else {
+        if (isInViewport(featuresContainer)) {
+            toTopLink.classList.add("visible")
+        }
+    }
 })
 
 const cleanOverviews = (overviewList) => {

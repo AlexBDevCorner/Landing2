@@ -14,6 +14,34 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.to-top-link {
+    bottom: 20vh;
+    right: 3vw;
+    padding: 2rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    opacity: 0;
+    background-color: black;
+}
+
+.to-top-link a {
+    position: relative;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    top: 25%;
+}
+
+.to-top-link.visible {
+    opacity: 0.50;
+}
+
 #showcase {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./action-ball-field-274506.jpg");
     background-size: cover;
@@ -41,6 +69,12 @@ body {
 .main-nav--items li {
     padding: 0 20px 0 20px;
     animation: fade-in-right ease 1s forwards;
+}
+
+.main-nav--items li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--main-txt-color);
 }
 
 .main-container {
