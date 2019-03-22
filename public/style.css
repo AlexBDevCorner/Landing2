@@ -125,6 +125,16 @@ html {
     word-spacing: 4px;
 }
 
+@media screen and (max-width: 600px) {
+    .slogan-container h1 {
+        font-size: 2.5rem;
+    }
+  
+    .slogan-container p {
+      font-size: 1.5rem;  
+    }
+}
+
 .learn-more {
     color:white;
     position: absolute;
@@ -150,6 +160,14 @@ html {
     border-top: solid 3px var(--main-txt-color);
     height: 88vh;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    #features-section {
+        font-size: 2.5rem;
+        height: auto;
+        flex-direction: column;
+    }
 }
 
 @keyframes fade-in-right {
@@ -205,6 +223,23 @@ html {
     justify-content: space-around;
     align-items: center;
     padding: 0 100px 0 100px;
+}
+
+@media screen and (max-width: 600px) {
+    #features-section h2 {
+        font-size: 2.5rem;
+        padding: 10% 10% 0 10%;
+    }
+    
+    .features-container {
+        font-size: 2.5rem;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .features-container div {
+        margin-top: 20%;
+    }
 }
 
 .features-container div h3 {
@@ -281,6 +316,12 @@ html {
     height: 15vh;
 }
 
+@media screen and (max-width: 600px) {
+    .flex-vertical-align {
+        height: auto;  
+    }
+}
+
 .how-it-works-image {
     height: 3rem;
     margin: 0 10px;
@@ -334,4 +375,14 @@ html {
 
 .overview ul {
     opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+    #how-it-works {
+        display: none;  
+    }
+    
+    #overview-section {
+        display: none;
+    }
 }
